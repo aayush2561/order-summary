@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-image: url("./images/pattern-background-desktop.svg");
+      background-size:contain;
+      background-position: top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-color:  hsl(225, 100%, 94%);
+    }
+    .container
+    {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      background-color: white;
+      max-width: 400px;
+      border-radius:30px;
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+      max-height: 700px;
+    }
+    .container p
+    {
+      margin :0px 25px;
+      text-align: center;
+      opacity: 0.4;
+    }
+  .hero
+  {
+    max-width: 400px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .annual
+  {
+    background-color: hsl(225, 100%, 98%);
+    
+  }
+  .submit
+  {
+    background-color: blue;
+  }
+  .annual img{
+    border-radius: 50px;
+  }
+  .annual h2{
+    display: inline-block;
+    position: relative;
+    bottom:15px;
+    left: 20px;
+    font-size:medium;
+    
+  }
+  .annual p{
+    display:inline;
+    font-size: 16px;
+    position: relative;
+    right: 100px;
+    top:10px;
+    font-size: larger;
+    bottom: 10px;
+    opacity: 0.4;
+   
+  }
+  .annual a{
+    position: relative;
+    font-size: 16px;
+    bottom: 15px;
+  }
+  .submit{
+    border-radius: 10px;
+    margin: 20px 50px;
+    color: white;
+    padding:10px 0px;
+  }
+
+.cancel
+{
+  margin: 30px;
+  opacity: 0.7;
+}
+  
+  </style>
+</head>
+<body>
+<div class="container">
+  <img class="hero" src="./images/illustration-hero.svg">
+ <h1> Order Summary</h1>
+
+<p> You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+  <div class="annual">
+    <img class=" a"src="./images/icon-music.svg">
+    <h2> Annual Plan </h2>
+    <p> $59.99/year</p>
+
+    <a href="#">Change</a>
+   </div>
+
+ <div class="submit"> Proceed to Payment </div>
+  <div class="cancel">Cancel Order</div> 
+  </div>
+
+</body>
+</html>
